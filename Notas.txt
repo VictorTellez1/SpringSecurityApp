@@ -1,0 +1,17 @@
+Por defecto spring security una vez existe esta dependencia :
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+Protege los endpoints
+Para acceder a ellos spring security nos genera un usuario y una contraseña basicos
+Que es user y la contraseña se muestra en consola con la siguiente leyenda
+Using generated security password:
+
+Este comportamiento lo podemos modificar en application.properties
+#Security Config
+spring.security.user.name = elpepe
+spring.security.user.password = 12345
+
+
+Configuracion de la base de datos para Usuarios
